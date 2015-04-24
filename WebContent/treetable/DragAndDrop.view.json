@@ -1,0 +1,69 @@
+{
+  "Type": "sap.ui.core.mvc.JSONView",
+  "controllerName":"treetable.DragAndDrop",
+  "content": [
+    {
+      "Type": "sap.ui.commons.layout.MatrixLayout",
+      "columns": 2,
+      "rows": [
+        {
+          "Type": "sap.ui.commons.layout.MatrixLayoutRow",
+          "cells": [
+            {
+              "Type": "sap.ui.commons.layout.MatrixLayoutCell",
+              "content": [
+                {
+                  "Type": "sap.ui.commons.Tree",
+                  "id": "Tree",
+                  "title": "Widgets"
+                }
+              ]
+            },
+            {
+              "Type": "sap.ui.commons.layout.MatrixLayoutCell",
+              "content": [
+                {
+                  "Type": "sap.ui.table.TreeTable",
+                  "id": "TableTree",
+                  "title": "View",
+                  "columns": [
+                    {
+                      "Type": "sap.ui.table.Column",
+                      "template":"text",
+                      "label":
+                      {
+                        "Type": "sap.ui.commons.TextView",
+                        "id":"item_text",
+                        "text":"Some Testtext"
+                      }
+                    },
+                    {
+                      "Type": "sap.ui.table.Column",
+                      "template":"id",
+                      "label":
+                      {
+                        "Type": "sap.ui.commons.TextView",
+                        "id":"item_name",
+                        "text":"Id"
+                      }
+                    },
+                    {
+                      "Type": "sap.ui.table.Column",
+                      "template":"Type",
+                      "label":
+                      {
+                        "Type": "sap.ui.commons.TextView",
+                        "id":"item_type",
+                        "text":"Type"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
